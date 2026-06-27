@@ -6,9 +6,9 @@
 }
 
 :root {
-    --bg-overlay: rgba(16, 12, 15, 0.96); /* Subtle warm professional undertone */
+    --bg-overlay: rgba(16, 12, 15, 0.96);
     --card-bg: #1c1619;
-    --accent-color: #ff94b6; /* Elegant soft professional rose-pink accent */
+    --accent-color: #ff94b6;
     --text-primary: #ffffff;
     --text-secondary: #cfc2c6;
     --border-color: #33262b;
@@ -20,7 +20,7 @@
 }
 
 body {
-    background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('sim.jpg');
+    background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('sim.JPG');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
