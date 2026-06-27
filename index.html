@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadiya Isah Miga | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            
+            <!-- Professional 3-Slash Hamburger Menu Trigger -->
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navigation Links System (10 Sections) -->
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#home" class="nav-item active" onclick="switchPage('home')">Home</a></li>
+                <li><a href="#about" class="nav-item" onclick="switchPage('about')">About</a></li>
+                <li><a href="#education" class="nav-item" onclick="switchPage('education')">Education</a></li>
+                <li><a href="#skills" class="nav-item" onclick="switchPage('skills')">Skills</a></li>
+                <li><a href="#projects" class="nav-item" onclick="switchPage('projects')">Projects</a></li>
+                <li><a href="#certifications" class="nav-item" onclick="switchPage('certifications')">Certifications</a></li>
+                <li><a href="#experience" class="nav-item" onclick="switchPage('experience')">Experience</a></li>
+                <li><a href="#tools" class="nav-item" onclick="switchPage('tools')">Tools & Platforms</a></li>
+                <li><a href="#services" class="nav-item" onclick="switchPage('services')">Services</a></li>
+                <li><a href="#contact" class="nav-item" onclick="switchPage('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Section Handler for all 10 Views -->
+    <main class="content-wrapper">
+
+        <!-- PAGE 1: HOME -->
+        <section id="home" class="page-view active">
+            <div class="hero-content">
+                <h1 class="fantasy-heading">Sadiya Isah Miga</h1>
+                <p class="subtitle">Software Engineering Student & Frontend Developer</p>
+                <p class="tagline">Crafting structured architectures, intuitive user interfaces, and reliable web applications.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary" onclick="switchPage('projects')">View My Work</a>
+                    <a href="#contact" class="btn secondary" onclick="switchPage('contact')">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: ABOUT -->
+        <section id="about" class="page-view">
+            <div class="about-grid">
+                <div class="about-img-container">
+                    <img src="simabout.jpg" alt="Sadiya Isah Miga">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am a 20-year-old Software Engineering student currently completing my 200-level studies at Northwest University, Kano. My approach to technical problem-solving combines absolute structural clarity with a focus on writing clean, reusable source code.</p>
+                    <p>Building on a solid core foundation in computer science, I dedicate my time to mastering engineering frameworks and scripting engines. I prioritize logic and cross-device performance, ensuring that every interface is fast, accessible, and resilient under real-world conditions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: EDUCATION -->
+        <section id="education" class="page-view">
+            <h2>Educational Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">Current (Level 200)</span>
+                    <h3>B.Sc. Software Engineering</h3>
+                    <p class="institution">Northwest University, Kano</p>
+                    <p>Deepening understanding of advanced algorithms, backend runtime structures, engineering design processes, and platform scalability paradigms.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2025</span>
+                    <h3>National Diploma (ND) in Computer Science</h3>
+                    <p class="institution">Jigawa State Institute of Information Technology, Kazaure</p>
+                    <p>Completed intensive training in computing systems, relational databases, structural programming fundamentals, and technical logic design.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">Completed</span>
+                    <h3>Responsive Web Design Program</h3>
+                    <p class="institution">freeCodeCamp</p>
+                    <p>300 hours of standard-compliant coursework centered around semantic content hierarchies, responsive space optimization, Grid layout systems, and global accessibility requirements.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 4: SKILLS -->
+        <section id="skills" class="page-view">
+            <h2>Technical Proficiencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Interface Architecture</h3>
+                    <p>Constructing standard-compliant, search-optimized data frameworks with a focus on long-term maintainability.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-bezier-curve"></i>
+                    <h3>Visual Presentation</h3>
+                    <p>Implementing fluid layout mechanics, unified variable-driven themes, and flexible screen configurations across desktop and mobile form factors.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Application Logic</h3>
+                    <p>Developing event-driven client operations, asynchronous request structures, object modeling, and reliable interface interactions.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js Backend</h3>
+                    <p>Structuring modular server-side execution components, handling system environments, and tracking workspace software packages via NPM.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 5: PROJECTS -->
+        <section id="projects" class="page-view">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>My Personal Portfolio</h3>
+                        <p class="project-meta">Built with: Vanilla HTML, CSS, JavaScript</p>
+                        <p>My first official professional deployment. A 10-page tabbed architectural portfolio created completely from scratch without external frameworks, featuring modular CSS layouts and customized JavaScript routing mechanisms.</p>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://muhammadgala.netlify.app/" target="_blank" class="btn primary" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
+                                Launch Live Application <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 6: CERTIFICATIONS -->
+        <section id="certifications" class="page-view">
+            <h2>Professional Certifications</h2>
+            <div class="cert-container">
+                <div class="cert-card">
+                    <h3>Responsive Web Design Certificate</h3>
+                    <p class="issuer">Issued by freeCodeCamp</p>
+                    <div class="cert-image">
+                        <img src="simcert.jpg" alt="freeCodeCamp Responsive Web Design Certificate">
+                    </div>
+                    <a href="https://www.freecodecamp.org/certification/sadiya-isah-miga/responsive-web-design" target="_blank" class="btn primary cert-btn">
+                        Verify Official Credential <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 7: EXPERIENCE -->
+        <section id="experience" class="page-view">
+            <h2>Experience</h2>
+            <div class="experience-box">
+                <div class="exp-header">
+                    <h3>Independent Software Developer</h3>
+                    <span class="exp-date">2025 - Present</span>
+                </div>
+                <p class="exp-sub">Open Source & Personal Implementations</p>
+                <ul class="exp-list">
+                    <li>Building cross-browser compatible application skeletons using strict semantic HTML markup.</li>
+                    <li>Structuring responsive style modules ensuring programmatic fluidity on desktop, tablet, and mobile platforms.</li>
+                    <li>Debugging client-side functionality scripts and using Git for atomic feature commits.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PAGE 8: TOOLS & PLATFORMS -->
+        <section id="tools" class="page-view">
+            <h2>Ecosystem & Deployment Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-item"><i class="fab fa-github"></i> <span>GitHub</span></div>
+                <div class="tool-item"><i class="fas fa-cloud-upload-alt"></i> <span>Vercel</span></div>
+                <div class="tool-item"><i class="fas fa-globe"></i> <span>Netlify</span></div>
+                <div class="tool-item"><i class="fas fa-server"></i> <span>Render</span></div>
+            </div>
+        </section>
+
+        <!-- PAGE 9: SERVICES -->
+        <section id="services" class="page-view">
+            <h2>What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Frontend Layout Design</h3>
+                    <p>Turning layout blueprints into production-ready web interfaces with explicit emphasis on clean, pixel-perfect structural translation.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Responsive Restructuring</h3>
+                    <p>Fixing broken layouts, scaling desktop views cleanly down to mobile targets, and maximizing cross-device usability metrics.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Vanilla JS Logic</h3>
+                    <p>Writing functional, lightweight client-side scripts to run custom interactivity without relying on heavy framework libraries.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 10: CONTACT -->
+        <section id="contact" class="page-view">
+            <h2>Contact & Channels</h2>
+            <div class="contact-info-block">
+                <p>Feel free to reach out directly regarding academic collaborations, project tasks, or engineering roles.</p>
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:haleema7125@gmail.com">haleema7125@gmail.com</a>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+2349073807125">+234 907 380 7125</a>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kano, Nigeria</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Sadiya Isah Miga. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
